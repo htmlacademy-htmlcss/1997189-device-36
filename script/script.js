@@ -22,7 +22,7 @@ const prevButton = document.querySelector('.slider-prev');
 
 const bulletItem = [...document.querySelectorAll('.bullet-item')];
 
-
+/*
 let index = 0;
 nextButton.addEventListener('click', () => {
   sliderItem[index].classList.remove('slider-screen-active');
@@ -66,4 +66,4 @@ for (let i = 0; i < bulletItem.length; i++) {
       sliderItem[i].classList.add('slider-screen-active');
     }
   });
-}
+}*/
