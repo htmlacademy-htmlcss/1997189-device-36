@@ -46,10 +46,47 @@
                   <li class="navigation-list-item">
                     <a class="navigation-link navigation-link-compare" href="#">Сравнить</a>
                   </li>
-                  <li class="navigation-list-item">
+                  <li class="navigation-list-item navigation-popover-item">
                     <a class="navigation-link navigation-link-bin" href="#">
                       <span class="navigation-quantity">2</span>
                       Корзина</a>
+                      <div class="popover">
+                        <div class="popover-wrapper">
+                          <h3 class="visually-hidden">Открытая корзина</h3>
+                          <ul class="popover-list">
+                            <li class="popover-item">
+                              <a class="popover-item-link" href="#">
+                                <img class="popover-image" src="images/popover-amateur-selfie-stick.jpg" width="39"
+                                  height="43" alt="Любительская селфи палка.">
+                                <h4 class="popover-title">Любительская селфи-палка</h4>
+                              </a>
+                              <button class="popover-item-button" type="button"
+                                aria-label="Удалить товар из корзины"></button>
+                            </li>
+                            <li class="popover-item">
+                              <a class="popover-item-link" href="#">
+                                <img class="popover-image" src="images/popover-professional-selfie-stick.jpg" width="39"
+                                  height="43" alt="Профессиональная селфи палка">
+                                <h4 class="popover-title">Профессиональная
+                                  селфи-палка</h4>
+                              </a>
+                              <button class="popover-item-button" type="button"
+                                aria-label="Удалить товар из корзины"></button>
+                            </li>
+                          </ul>
+                          <div class="popover-price-wrapper">
+                            <p class="popover-products-about">Товаров:
+                              <span class="popover-product-quantity">2</span>
+                            </p>
+                            <p class="popover-price">Сумма:
+                              <span class="popover-product-price">2000 ₽</span>
+                            </p>
+                          </div>
+
+                          <a class="popover-link" href="#">Открыть корзину</a>
+
+                        </div>
+                      </div>
                   </li>
                 </ul>
               </div>
@@ -98,7 +135,7 @@
                   <a class="menu-list-item-link" href="#">Гарантия</a>
                 </li>
                 <li class="menu-list-item">
-                  <a class="menu-list-item-link" href="#">Контакты</a>
+                  <a class="menu-list-item-link menu-list-item-contacts" href="#">Контакты</a>
                 </li>
               </ul>
             </div>
@@ -130,7 +167,7 @@
               <form class="filter-form" action="https://echo.htmlacademy.ru/" method="get">
                 <fieldset class="filter-form-price">
                   <legend class="filter-form-caption filter-price-caption">
-                    Стоимость:
+                    Стоимость
                   </legend>
                   <div class="range-scale">
                     <div class="range-bar" style="left:0; width:119px">
@@ -145,11 +182,13 @@
 
 
                   <div class="range-wrapper-inputs">
-                    <label class="catalog-filter-label">от
+                    <label class="catalog-filter-label">
+                      <span class="catalog-filter-label-text">от</span>
                       <input class="range-input" type="number" value="0" name="min-price">
                     </label>
 
-                    <label class="catalog-filter-label">до
+                    <label class="catalog-filter-label">
+                      <span class="catalog-filter-label-text">до</span>
                       <input class="range-input" type="number" value="5000" name="max-price">
                     </label>
                   </div>
@@ -190,12 +229,16 @@
                       <label class="filter-radio-label" for="bluetooth-yes">
                         <span class="filter-label-row">Есть</span>
                       </label>
+                      <span class="filter-radio-txt"></span>
+
                     </li>
                     <li class="filter-radio-item">
-                      <input type="radio" class="filter-radio-input visually-hidden" id="bluetooth-no" name="bluetooth">
+                      <input class="filter-radio-input visually-hidden" type="radio" id="bluetooth-no" name="bluetooth">
                       <label class="filter-radio-label" for="bluetooth-no">
                         <span class="filter-label-row">Нет</span>
                       </label>
+                      <span class="filter-radio-txt"></span>
+
                     </li>
                   </ul>
                 </fieldset>
@@ -224,7 +267,12 @@
                 <ul class="product-cards-list">
                   <li class="product-cards-item">
                     <a class="product-item-link" href="#">
-                      <img class="products-image" src="images/amateur-selfie-stick.jpg" width="360" height="380" alt="">
+                      <div class="products-image-wrapper">
+                        <img class="products-image" src="images/amateur-selfie-stick.jpg" width="360" height="380"
+                          alt="Любительская селфи-палка.">
+
+                      </div>
+                      <span class="products-image-text">Подробнее</span>
                       <div class="product-desc">
                         <h4 class="product-cards-caption">Любительская <br>селфи-палка</h4>
                         <span class="product-price">500 ₽</span>
@@ -234,9 +282,11 @@
 
                   <li class="product-cards-item">
                     <a class="product-item-link" href="#">
-
-                      <img class="products-image" src="images/professional-selfie-stick.jpg" width="360" height="380"
-                        alt="">
+                      <div class="products-image-wrapper">
+                        <img class="products-image" src="images/professional-selfie-stick.jpg" width="360" height="380"
+                          alt="Профессиональная селфи-палка.">
+                        <span class="products-image-text">Подробнее</span>
+                      </div>
                       <div class="product-desc">
                         <h4 class="product-cards-caption">Профессиональная<br>селфи-палка</h4>
                         <span class="product-price">1 500 ₽</span>
@@ -246,8 +296,11 @@
 
                   <li class="product-cards-item">
                     <a class="product-item-link" href="#">
-                      <img class="products-image" src="images/unsinkable-selfie-stick.jpg" width="360" height="380"
-                        alt="">
+                      <div class="products-image-wrapper">
+                        <img class="products-image" src="images/unsinkable-selfie-stick.jpg" width="360" height="380"
+                          alt="Непотопляемая селфи-палка.">
+                        <span class="products-image-text">Подробнее</span>
+                      </div>
                       <div class="product-desc">
                         <h4 class="product-cards-caption">Непотопляемая<br>селфи&nbsp;-палка</h4>
                         <span class="product-price">2 500 ₽</span>
@@ -257,8 +310,11 @@
 
                   <li class="product-cards-item">
                     <a class="product-item-link" href="#">
-                      <img class="products-image" src="images/follow-me-selfie-stick.jpg" width="360" height="380"
-                        alt="">
+                      <div class="products-image-wrapper">
+                        <img class="products-image" src="images/follow-me-selfie-stick.jpg" width="360" height="380"
+                          alt="Селфи-палка Следуй за мной.">
+                        <span class="products-image-text">Подробнее</span>
+                      </div>
                       <div class="product-desc">
                         <h4 class="product-cards-caption">Селфи-палка «Следуй за&nbsp;мной»</h4>
                         <span class="product-price">1 500 ₽</span>
@@ -269,11 +325,11 @@
 
                 <a class="catalog-products-button" href="#">Загрузить ещё</a>
                 <div class="pagination-box">
-                  <a href="#" class="pagination-link-prev">Назад</a>
+                  <a href="#" class="pagination-link-prev pagination-link-current ">Назад</a>
                   <ol class="pagination-list">
 
                     <li class="pagination-list-item">
-                      <a class="pagination-link" href="#">1</a>
+                      <a class="pagination-link pagination-link-item-current" href="#">1</a>
                     </li>
                     <li class="pagination-list-item">
                       <a class="pagination-link" href="#">2</a>

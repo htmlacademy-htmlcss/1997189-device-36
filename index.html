@@ -42,38 +42,42 @@
                   <a class="navigation-link navigation-link-bin" href="#">
                     <span class="navigation-quantity">2</span>
                     Корзина</a>
-                  <div class="popover popover-cart">
-                    <h3 class="visually-hidden">Открытая корзина</h3>
-                    <ul class="popover-list">
-                      <li class="popover-item">
-                        <a class="popover-item-link" href="#">
-                          <img class="popover-image" src="images/popover-amateur-selfie-stick.jpg" width="39"
-                            height="43" alt="Любительская селфи палка.">
-                          <h4 class="popover-title">Любительская селфи-палка</h4>
-                        </a>
-                        <button class="popover-item-button" type="button"
-                          aria-label="Удалить товар из корзины"></button>
-                      </li>
-                      <li class="popover-item">
-                        <a class="popover-item-link" href="#">
-                          <img class="popover-image" src="images/popover-professional-selfie-stick.jpg" width="39"
-                            height="43" alt="Профессиональная селфи палка">
-                          <h4 class="popover-title">Профессиональная
-                            селфи-палка</h4>
-                        </a>
-                        <button class="popover-item-button" type="button"
-                          aria-label="Удалить товар из корзины"></button>
-                      </li>
-                    </ul>
-                    <div class="popover-price-wrapper">
-                      <p class="popover-products-about">Товаров:
-                        <span class="popover-product-quantity">2</span>
-                      </p>
-                      <p class="popover-price">Сумма:
-                        <span class="popover-product-price">2000 ₽</span>
-                      </p>
+                  <div class="popover">
+                    <div class="popover-wrapper">
+                      <h3 class="visually-hidden">Открытая корзина</h3>
+                      <ul class="popover-list">
+                        <li class="popover-item">
+                          <a class="popover-item-link" href="#">
+                            <img class="popover-image" src="images/popover-amateur-selfie-stick.jpg" width="39"
+                              height="43" alt="Любительская селфи палка.">
+                            <h4 class="popover-title">Любительская селфи-палка</h4>
+                          </a>
+                          <button class="popover-item-button" type="button"
+                            aria-label="Удалить товар из корзины"></button>
+                        </li>
+                        <li class="popover-item">
+                          <a class="popover-item-link" href="#">
+                            <img class="popover-image" src="images/popover-professional-selfie-stick.jpg" width="39"
+                              height="43" alt="Профессиональная селфи палка">
+                            <h4 class="popover-title">Профессиональная
+                              селфи-палка</h4>
+                          </a>
+                          <button class="popover-item-button" type="button"
+                            aria-label="Удалить товар из корзины"></button>
+                        </li>
+                      </ul>
+                      <div class="popover-price-wrapper">
+                        <p class="popover-products-about">Товаров:
+                          <span class="popover-product-quantity">2</span>
+                        </p>
+                        <p class="popover-price">Сумма:
+                          <span class="popover-product-price">2000 ₽</span>
+                        </p>
+                      </div>
+
+                      <a class="popover-link" href="#">Открыть корзину</a>
+
                     </div>
-                    <a class="popover-link" href="#">Открыть корзину</a>
                   </div>
                 </li>
               </ul>
@@ -86,7 +90,7 @@
                 <div class="dropdown-wrapper">
                   <ul class="dropdown-list">
                     <li class="dropdown-item">
-                      <a class="dropdown-item-link dropdown-item-link-active " href="#">Виртуальная реальность</a>
+                      <a class="dropdown-item-link" href="#">Виртуальная реальность</a>
                     </li>
                     <li class="dropdown-item">
                       <a class="dropdown-item-link" href="catalog.html">Моноподы для селфи</a>
@@ -116,7 +120,7 @@
               </div>
               <ul class="main-menu-list">
                 <li class="menu-list-item">
-                  <a class="menu-list-item-link menu-item-link-current" href="#">Доставка</a>
+                  <a class="menu-list-item-link" href="#">Доставка</a>
                 </li>
                 <li class="menu-list-item">
                   <a class="menu-list-item-link" href="#">Гарантия</a>
@@ -467,14 +471,15 @@
           </div>
           <form class="modal-form" action="https://echo.htmlacademy.ru/" method="post">
             <div class="modal-name-box">
-              <label for="input-name" class="modal-input-label modal-person-label">Ваше имя:</label>
-              <input type="text" class="name-input" id="input-name" placeholder="Введите имя" reqiured>
+              <label for="input-name" class="modal-input-label">Ваше имя:</label>
+              <input type="text" class="name-input modal-person-input" id="input-name" placeholder="Введите имя"
+                required>
               <span class="input-error-row"></span>
             </div>
             <div class="modal-email-box">
-              <label for="email-input" class="modal-input-label modal-envelope-label">Ваш e-mail:</label>
-              <input type="email" class="name-input input-error" id="email-input" placeholder="Введите Ваш e-mail"
-                required>
+              <label for="email-input" class="modal-input-label ">Ваш e-mail:</label>
+              <input type="email" class="name-input modal-envelope-input input-error" id="email-input"
+                placeholder="Введите Ваш e-mail" required>
               <span class="input-error-row">Забавный у вас адрес</span>
             </div>
             <div class="must-have-wrapper">
@@ -484,8 +489,10 @@
             <div class="modal-buttons-wrapper">
               <label class="quantity-label" for="quantity-input">Количество:</label>
               <button class="tooltip" type="button">
-                <span class="tooltip-text">Постараемся найти, сколько нужно. Привезём сколько получится по требованиям
-                  к провозу багажа.</span>
+                <span class="tooltip-text-wrapper">
+                  <span class="tooltip-text">Постараемся найти, сколько нужно. Привезём сколько получится по требованиям
+                    к&nbsp;провозу багажа.</span>
+                </span>
               </button>
               <div class="modal-buttons-box">
                 <button class="decrease-button" type="button">
