@@ -6,12 +6,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Каталог магазина Девайс</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
     <link rel="stylesheet" href="styles/styles.css">
   </head>
 
   <body>
     <div class="page-container">
       <header class="page-header content-wrapper">
+        <h1 class="visually-hidden">Страница каталога</h1>
         <div class="header-wrapper">
           <a class="page-header-link" href="index.html">
             <img class="page-header-logo" src="images/header-logo.svg" width="145" height="36"
@@ -35,7 +37,7 @@
                     </a>
                   </li>
                   <li class="entry-list-item">
-                    <a class="navigation-link" href="#">
+                    <a class="navigation-link navigation-link-exit" href="#">
                       <span class="entry-current-name">Выйти</span>
                     </a>
                   </li>
@@ -50,43 +52,43 @@
                     <a class="navigation-link navigation-link-bin" href="#">
                       <span class="navigation-quantity">2</span>
                       Корзина</a>
-                      <div class="popover">
-                        <div class="popover-wrapper">
-                          <h3 class="visually-hidden">Открытая корзина</h3>
-                          <ul class="popover-list">
-                            <li class="popover-item">
-                              <a class="popover-item-link" href="#">
-                                <img class="popover-image" src="images/popover-amateur-selfie-stick.jpg" width="39"
-                                  height="43" alt="Любительская селфи палка.">
-                                <h4 class="popover-title">Любительская селфи-палка</h4>
-                              </a>
-                              <button class="popover-item-button" type="button"
-                                aria-label="Удалить товар из корзины"></button>
-                            </li>
-                            <li class="popover-item">
-                              <a class="popover-item-link" href="#">
-                                <img class="popover-image" src="images/popover-professional-selfie-stick.jpg" width="39"
-                                  height="43" alt="Профессиональная селфи палка">
-                                <h4 class="popover-title">Профессиональная
-                                  селфи-палка</h4>
-                              </a>
-                              <button class="popover-item-button" type="button"
-                                aria-label="Удалить товар из корзины"></button>
-                            </li>
-                          </ul>
-                          <div class="popover-price-wrapper">
-                            <p class="popover-products-about">Товаров:
-                              <span class="popover-product-quantity">2</span>
-                            </p>
-                            <p class="popover-price">Сумма:
-                              <span class="popover-product-price">2000 ₽</span>
-                            </p>
-                          </div>
-
-                          <a class="popover-link" href="#">Открыть корзину</a>
-
+                    <div class="popover">
+                      <div class="popover-wrapper">
+                        <h2 class="visually-hidden">Открытая корзина</h2>
+                        <ul class="popover-list">
+                          <li class="popover-item">
+                            <a class="popover-item-link" href="#">
+                              <img class="popover-image" src="images/popover-amateur-selfie-stick.jpg" width="39"
+                                height="43" alt="Любительская селфи палка.">
+                              <h3 class="popover-title">Любительская селфи-палка</h3>
+                            </a>
+                            <button class="popover-item-button" type="button"
+                              aria-label="Удалить товар из корзины"></button>
+                          </li>
+                          <li class="popover-item">
+                            <a class="popover-item-link" href="#">
+                              <img class="popover-image" src="images/popover-professional-selfie-stick.jpg" width="39"
+                                height="43" alt="Профессиональная селфи палка">
+                              <h3 class="popover-title">Профессиональная
+                                селфи-палка</h3>
+                            </a>
+                            <button class="popover-item-button" type="button"
+                              aria-label="Удалить товар из корзины"></button>
+                          </li>
+                        </ul>
+                        <div class="popover-price-wrapper">
+                          <p class="popover-products-about">Товаров:
+                            <span class="popover-product-quantity">2</span>
+                          </p>
+                          <p class="popover-price">Сумма:
+                            <span class="popover-product-price">2000 ₽</span>
+                          </p>
                         </div>
+
+                        <a class="popover-link" href="#">Открыть корзину</a>
+
                       </div>
+                    </div>
                   </li>
                 </ul>
               </div>
@@ -144,7 +146,7 @@
       </header>
       <main class="main-inner main-container">
         <header class="inner-header content-wrapper">
-          <h1 class="inner-header-caption">Моноподы для селфи</h1>
+          <h2 class="inner-header-caption">Моноподы для селфи</h2>
           <ul class="breadcrumbs-list">
             <li class="breadcrumbs-list-item">
               <a class="breadcrumbs-link" href="index.html">Главная</a>

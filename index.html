@@ -4,12 +4,14 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Девайс</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
     <link rel="stylesheet" href="styles/styles.css">
   </head>
 
   <body>
     <div class="page-container">
       <header class="page-header content-wrapper">
+        <h1 class="visually-hidden">Сайт интернет-магазина Девайс</h1>
         <div class="header-wrapper">
           <a class="page-header-link">
             <img class="page-header-logo" src="images/header-logo.svg" width="145" height="36"
@@ -25,62 +27,64 @@
                   <button class="header-navigation-button" type="submit">Найти</button>
                 </form>
               </div>
+              <div class="entry-list-wrapper">
+                <ul class="entry-list">
+                  <li class="entry-list-item">
+                    <a class="navigation-link navigation-link-entry" href="#">
+                      <span class="entry-current-name">Войти</span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <div class="navigation-list-wrapper">
+                <ul class="navigation-list">
+                  <li class="navigation-list-item">
+                    <a class="navigation-link navigation-link-compare" href="#">Сравнить</a>
+                  </li>
+                  <li class="navigation-list-item navigation-popover-item">
+                    <a class="navigation-link navigation-link-bin" href="#">
+                      <span class="navigation-quantity">2</span>
+                      Корзина</a>
+                    <div class="popover">
+                      <div class="popover-wrapper">
+                        <h2 class="visually-hidden">Открытая корзина</h2>
+                        <ul class="popover-list">
+                          <li class="popover-item">
+                            <a class="popover-item-link" href="#">
+                              <img class="popover-image" src="images/popover-amateur-selfie-stick.jpg" width="39"
+                                height="43" alt="Любительская селфи палка.">
+                              <h3 class="popover-title">Любительская селфи-палка</h3>
+                            </a>
+                            <button class="popover-item-button" type="button"
+                              aria-label="Удалить товар из корзины"></button>
+                          </li>
+                          <li class="popover-item">
+                            <a class="popover-item-link" href="#">
+                              <img class="popover-image" src="images/popover-professional-selfie-stick.jpg" width="39"
+                                height="43" alt="Профессиональная селфи палка">
+                              <h3 class="popover-title">Профессиональная
+                                селфи-палка</h3>
+                            </a>
+                            <button class="popover-item-button" type="button"
+                              aria-label="Удалить товар из корзины"></button>
+                          </li>
+                        </ul>
+                        <div class="popover-price-wrapper">
+                          <p class="popover-products-about">Товаров:
+                            <span class="popover-product-quantity">2</span>
+                          </p>
+                          <p class="popover-price">Сумма:
+                            <span class="popover-product-price">2000 ₽</span>
+                          </p>
+                        </div>
 
-              <ul class="entry-list">
-                <li class="entry-list-item">
-                  <a class="navigation-link navigation-link-entry" href="#">
-                    <span class="entry-current-name">Войти</span>
-                  </a>
-                </li>
-              </ul>
+                        <a class="popover-link" href="#">Открыть корзину</a>
 
-              <ul class="navigation-list">
-                <li class="navigation-list-item">
-                  <a class="navigation-link navigation-link-compare" href="#">Сравнить</a>
-                </li>
-                <li class="navigation-list-item navigation-popover-item">
-                  <a class="navigation-link navigation-link-bin" href="#">
-                    <span class="navigation-quantity">2</span>
-                    Корзина</a>
-                  <div class="popover">
-                    <div class="popover-wrapper">
-                      <h3 class="visually-hidden">Открытая корзина</h3>
-                      <ul class="popover-list">
-                        <li class="popover-item">
-                          <a class="popover-item-link" href="#">
-                            <img class="popover-image" src="images/popover-amateur-selfie-stick.jpg" width="39"
-                              height="43" alt="Любительская селфи палка.">
-                            <h4 class="popover-title">Любительская селфи-палка</h4>
-                          </a>
-                          <button class="popover-item-button" type="button"
-                            aria-label="Удалить товар из корзины"></button>
-                        </li>
-                        <li class="popover-item">
-                          <a class="popover-item-link" href="#">
-                            <img class="popover-image" src="images/popover-professional-selfie-stick.jpg" width="39"
-                              height="43" alt="Профессиональная селфи палка">
-                            <h4 class="popover-title">Профессиональная
-                              селфи-палка</h4>
-                          </a>
-                          <button class="popover-item-button" type="button"
-                            aria-label="Удалить товар из корзины"></button>
-                        </li>
-                      </ul>
-                      <div class="popover-price-wrapper">
-                        <p class="popover-products-about">Товаров:
-                          <span class="popover-product-quantity">2</span>
-                        </p>
-                        <p class="popover-price">Сумма:
-                          <span class="popover-product-price">2000 ₽</span>
-                        </p>
                       </div>
-
-                      <a class="popover-link" href="#">Открыть корзину</a>
-
                     </div>
-                  </div>
-                </li>
-              </ul>
+                  </li>
+                </ul>
+              </div>
             </div>
 
             <div class="menu-wrapper">
@@ -135,7 +139,7 @@
       </header>
 
       <main class="main-index main-container">
-        <h1 class="visually-hidden">Сайт интернет-магазина Девайс</h1>
+
 
         <section class="slider content-wrapper">
           <h2 class="visually-hidden">Демонстрация товаров интернет-магазина Девайс</h2>
@@ -313,7 +317,6 @@
             <ul class="service-list-description">
               <li class="service-description-item service-list-delivery service-description-active">
                 <h3 class="service-list-caption">Доставка</h3>
-
                 <p class="service-list-about delivery-about">Мы с удовольствием доставим ваш товар прямо к&nbsp;вашему
                   подъезду совершенно бесплатно! Ведь мы&nbsp;неплохо заработаем, поднимая его на ваш этаж.</p>
               </li>
@@ -395,7 +398,9 @@
                   placeholder="Ваш e-mail" required>
                 <button class="button subscribe-button" type="submit">Подписаться</button>
               </form>
-              <span class="subscribe-row">Это бесплатно</span>
+              <div class="subscribe-row-box">
+                <span class="subscribe-row">Это бесплатно</span>
+              </div>
             </div>
           </div>
         </section>
