@@ -6,8 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Каталог магазина Девайс</title>
-    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
     <link rel="stylesheet" href="styles/styles.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
   </head>
 
   <body>
@@ -24,7 +24,7 @@
               <div class="form-wrapper">
                 <form class="header-form" action="https://echo.htmlacademy.ru/" method="get">
                   <input class="header-form-input" type="text" id="navigation-search" name="navigation-search"
-                    placeholder="Поиск по сайту" aria-label="Поиск товаров на сайте" required>
+                    placeholder="Поиск по сайту" aria-label="Поиск товаров на сайте" value="Текст поиска" required>
                   <label class="header-form-label" for="navigation-search"></label>
                   <button class="header-navigation-button" type="submit">Найти</button>
                 </form>
@@ -84,49 +84,47 @@
                             <span class="popover-product-price">2000 ₽</span>
                           </p>
                         </div>
-
                         <a class="popover-link" href="#">Открыть корзину</a>
-
                       </div>
                     </div>
                   </li>
                 </ul>
               </div>
-
             </div>
             <div class="menu-wrapper">
               <div class="dropdown-box">
                 <a class="dropdown-link" href="#">Каталог товаров</a>
-
-                <div class="dropdown-wrapper dropdown-wrapper-catalog">
-                  <ul class="dropdown-list">
-                    <li class="dropdown-item">
-                      <a class="dropdown-item-link" href="#">Виртуальная реальность</a>
-                    </li>
-                    <li class="dropdown-item">
-                      <a class="dropdown-item-link" href="catalog.html">Моноподы для селфи</a>
-                    </li>
-                    <li class="dropdown-item">
-                      <a class="dropdown-item-link" href="#">Экшн-камеры
-                      </a>
-                    </li>
-                  </ul>
-                  <ul class="dropdown-list">
-                    <li class="dropdown-item">
-                      <a class="dropdown-item-link" href="#">Фитнеса-браслеты
-                      </a>
-                    </li>
-                    <li class="dropdown-item">
-                      <a class="dropdown-item-link" href="#">Умные часы
-                      </a>
-                    </li>
-                  </ul>
-                  <ul class="dropdown-list">
-                    <li class="dropdown-item">
-                      <a class="dropdown-item-link" href="#">Квадрокоптеры
-                      </a>
-                    </li>
-                  </ul>
+                <div class="dropdown-wrapper-box">
+                  <div class="dropdown-wrapper dropdown-wrapper-catalog">
+                    <ul class="dropdown-list">
+                      <li class="dropdown-item">
+                        <a class="dropdown-item-link" href="#">Виртуальная реальность</a>
+                      </li>
+                      <li class="dropdown-item">
+                        <a class="dropdown-item-link" href="catalog.html">Моноподы для селфи</a>
+                      </li>
+                      <li class="dropdown-item">
+                        <a class="dropdown-item-link" href="#">Экшн-камеры
+                        </a>
+                      </li>
+                    </ul>
+                    <ul class="dropdown-list">
+                      <li class="dropdown-item">
+                        <a class="dropdown-item-link" href="#">Фитнеса-браслеты
+                        </a>
+                      </li>
+                      <li class="dropdown-item">
+                        <a class="dropdown-item-link" href="#">Умные часы
+                        </a>
+                      </li>
+                    </ul>
+                    <ul class="dropdown-list">
+                      <li class="dropdown-item">
+                        <a class="dropdown-item-link" href="#">Квадрокоптеры
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
                 </div>
               </div>
               <ul class="main-menu-list">
@@ -153,7 +151,6 @@
             </li>
             <li class="breadcrumbs-list-item">
               <a class="breadcrumbs-link" href="#">Каталог товаров</a>
-              <!--какой ставить href?-->
             </li>
             <li class="breadcrumbs-list-item">
               <a class="breadcrumbs-link">Моноподы для селфи</a>
@@ -163,7 +160,6 @@
         <div class="catalog-products">
           <div class="catalog-products-wrapper content-wrapper">
             <section class="filter-container">
-
               <h2 class="visually-hidden">Фильтры для товаров</h2>
               <h3 class="filter-caption">Фильтр:</h3>
               <form class="filter-form" action="https://echo.htmlacademy.ru/" method="get">
@@ -181,14 +177,11 @@
                       </button>
                     </div>
                   </div>
-
-
                   <div class="range-wrapper-inputs">
                     <label class="catalog-filter-label">
                       <span class="catalog-filter-label-text">от</span>
                       <input class="range-input" type="number" value="0" name="min-price">
                     </label>
-
                     <label class="catalog-filter-label">
                       <span class="catalog-filter-label-text">до</span>
                       <input class="range-input" type="number" value="5000" name="max-price">
@@ -232,7 +225,6 @@
                         <span class="filter-label-row">Есть</span>
                       </label>
                       <span class="filter-radio-txt"></span>
-
                     </li>
                     <li class="filter-radio-item">
                       <input class="filter-radio-input visually-hidden" type="radio" id="bluetooth-no" name="bluetooth">
@@ -240,7 +232,6 @@
                         <span class="filter-label-row">Нет</span>
                       </label>
                       <span class="filter-radio-txt"></span>
-
                     </li>
                   </ul>
                 </fieldset>
@@ -248,7 +239,6 @@
                   <button class="filter-form-button" type="submit">Показать</button>
                 </div>
               </form>
-
             </section>
             <section class="cards-container">
               <div class="product-sorting">
@@ -272,7 +262,6 @@
                       <div class="products-image-wrapper">
                         <img class="products-image" src="images/amateur-selfie-stick.jpg" width="360" height="380"
                           alt="Любительская селфи-палка.">
-
                       </div>
                       <span class="products-image-text">Подробнее</span>
                       <div class="product-desc">
@@ -281,7 +270,6 @@
                       </div>
                     </a>
                   </li>
-
                   <li class="product-cards-item">
                     <a class="product-item-link" href="#">
                       <div class="products-image-wrapper">
@@ -295,7 +283,6 @@
                       </div>
                     </a>
                   </li>
-
                   <li class="product-cards-item">
                     <a class="product-item-link" href="#">
                       <div class="products-image-wrapper">
@@ -309,7 +296,6 @@
                       </div>
                     </a>
                   </li>
-
                   <li class="product-cards-item">
                     <a class="product-item-link" href="#">
                       <div class="products-image-wrapper">
@@ -324,12 +310,10 @@
                     </a>
                   </li>
                 </ul>
-
                 <a class="catalog-products-button" href="#">Загрузить ещё</a>
                 <div class="pagination-box">
                   <a href="#" class="pagination-link-prev pagination-link-current ">Назад</a>
                   <ol class="pagination-list">
-
                     <li class="pagination-list-item">
                       <a class="pagination-link pagination-link-item-current" href="#">1</a>
                     </li>
@@ -344,7 +328,6 @@
                     </li>
                     <li class="pagination-list-item">
                       <a class="pagination-link" href="#">15</a>
-
                   </ol>
                   <a href="#" class="pagination-link-next">Вперёд</a>
                 </div>
@@ -355,13 +338,12 @@
       </main>
       <footer class="footer">
         <div class="footer-wrapper content-wrapper">
-          <a class="footer-logo-link" href="#">
+          <a class="footer-logo-link" href="index.html">
             <img class="footer-logo" src="images/footer-logo.svg" width="145" height="36"
               alt="Логотип интернет-магазина Девайс.">
           </a>
           <div class="footer-contacts-wrapper">
             <address class="footer-address">Санкт-Петербург, набережная <br> реки Карповки, 5, литера П.</address>
-
             <div class="footer-socials-wrapper">
               <nav class="footer-nav">
                 <ul class="footer-nav-list">
@@ -380,13 +362,11 @@
                 <li class="footer-socials-list-item">
                   <a class="footer-socials-link telegram" href="https://t.me/htmlacademy">
                     <span class="visually-hidden">Телеграм</span>
-
                   </a>
                 </li>
                 <li class="footer-socials-list-item">
                   <a class="footer-socials-link youtube" href="https://www.youtube.com/user/htmlacademyru">
                     <span class="visually-hidden">Youtube</span>
-
                   </a>
                 </li>
                 <li class="footer-socials-list-item">
@@ -400,7 +380,7 @@
               <a class="phonenumber-link" href="tel:+78128121212">Тел.: +7 (812) 812-12-12</a>
               <a class="footer-html-academy-link" href="https://htmlacademy.ru/">
                 <svg class="footer-academy-logo" xmlns="http://www.w3.org/2000/svg" width="115" height="33"
-                  viewBox="0 0 115 33">
+                  viewBox="0 0 115 33" role="img" aria-label="Логотип Html-academy">
                   <path
                     d="M0 12.9v2.6h2.5v-2.6H0ZM11.6 4.5c-1.6 0-2.8.7-3.6 1.7h-.1V0h-2v15.5h2v-5.3c0-2.1 1.3-3.6 3.3-3.6 1.8 0 2.9 1.4 2.9 3.2v5.7h2V9.4c.1-3-1.8-4.9-4.5-4.9ZM26.6 4.8h-4.8V1.1h-2v3.8h-1.9v2h1.9v6c0 1.7 1 2.7 2.7 2.7h4.1v-2h-3.7c-.7 0-1.1-.4-1.1-1.1V6.8h4.8v-2ZM41.1 4.6c-1.6 0-2.9.8-3.5 2.1h-.1c-.6-1.2-1.8-2.1-3.4-2.1-1.4 0-2.5.8-3.1 1.8h-.1V4.8H29v10.6h2V10c0-2 1-3.5 2.6-3.5 1.5 0 2.4 1 2.4 2.6v6.3h2V9.8c0-2.4 1.4-3.3 2.6-3.3 1.5 0 2.4 1 2.4 2.6v6.3h2V8.9c.1-2.5-1.4-4.3-3.9-4.3ZM47.8 12.7c0 1.7 1 2.7 2.8 2.7h2v-2h-1.7c-.7 0-1.1-.4-1.1-1.1V0h-2v12.7ZM28.9 19.7c-.9-1.1-2.2-1.8-3.9-1.8-3.1 0-5.4 2.3-5.4 5.6s2.3 5.6 5.4 5.6c1.8 0 3-.8 3.8-1.9h.1v1.6h2V18.2h-2v1.5Zm-3.6 7.4c-2.2 0-3.6-1.6-3.6-3.6s1.4-3.6 3.6-3.6 3.6 1.6 3.6 3.6c0 1.9-1.4 3.6-3.6 3.6ZM44.2 22c-.5-2.4-2.6-4.1-5.4-4.1a5.4 5.4 0 0 0-5.6 5.6c0 3.1 2.2 5.6 5.6 5.6 2.8 0 4.9-1.8 5.4-4.2h-2.1a3.4 3.4 0 0 1-3.3 2.3c-2.2 0-3.6-1.6-3.6-3.6s1.4-3.6 3.6-3.6c1.6 0 2.8 1 3.3 2.2h2.1V22ZM55.1 19.7c-.9-1.1-2.2-1.8-3.9-1.8-3.1 0-5.4 2.3-5.4 5.6s2.3 5.6 5.4 5.6c1.8 0 3-.8 3.8-1.9h.1v1.6h2V18.2h-2v1.5Zm-3.6 7.4c-2.2 0-3.6-1.6-3.6-3.6s1.4-3.6 3.6-3.6 3.6 1.6 3.6 3.6c0 1.9-1.5 3.6-3.6 3.6ZM68.7 19.8c-.9-1.1-2.2-1.9-3.9-1.9-3.1 0-5.4 2.3-5.4 5.6s2.2 5.6 5.4 5.6c1.7 0 3-.8 3.8-1.8h.1v1.5h2V13.4h-2v6.4Zm-3.6 7.3c-2.2 0-3.6-1.6-3.6-3.6s1.4-3.6 3.6-3.6 3.6 1.6 3.6 3.6c-.1 2-1.5 3.6-3.6 3.6ZM78.3 17.9c-3.3 0-5.5 2.5-5.5 5.6 0 3 2.1 5.6 5.5 5.6 2.5 0 4.5-1.3 5.2-3.6h-2.1c-.5 1-1.6 1.6-3 1.6-1.9 0-3.3-1.3-3.4-2.9h8.8c.2-3.6-2-6.3-5.5-6.3Zm0 1.9c1.7 0 3 1 3.3 2.6h-6.5c.3-1.5 1.5-2.6 3.2-2.6ZM98.2 17.9c-1.6 0-2.9.8-3.6 2h-.1c-.6-1.2-1.8-2-3.4-2-1.4 0-2.5.7-3.1 1.8v-1.5h-1.9v10.6h2v-5.4c0-2 1-3.4 2.6-3.5 1.5 0 2.4 1 2.4 2.6v6.3h2v-5.6c0-2.4 1.4-3.3 2.6-3.3 1.5 0 2.4 1 2.4 2.6v6.3h2v-6.5c.1-2.6-1.4-4.4-3.9-4.4ZM109.4 27l-3.6-8.9h-2.2l4.8 11.6c-.3.9-.7 1.2-1.7 1.2h-2.5v2h2.5c1.8 0 2.8-.8 3.5-2.6l4.7-12.2h-2.1l-3.4 8.9Z" />
                 </svg>
@@ -410,7 +390,6 @@
         </div>
       </footer>
     </div>
-
   </body>
 
 </html>
