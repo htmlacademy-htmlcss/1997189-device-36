@@ -26,23 +26,11 @@ modalClose.addEventListener('click', (evt) => {
 });
 
 
-
-/*if (specialOrderLink) {
-  specialOrderLink.addEventListener('click', function (importantEvent) {
-    importantEvent.preventDefault();
-    modal.classList.add('modal-container-open');
-  });
-  modalCloseButton.addEventListener('click', function (importantEvent) {
-    modal.classList.remove('modal-container-open');
-  });
-}*/
-
 if (sliderList) {
   const model = [];
   const initModel = () => {
     const fragment = document.createDocumentFragment();
     sliderItems.forEach(() => {
-
       model.push(false);
       const dotElement = sliderDotTemplate.cloneNode(true);
       fragment.append(dotElement);
@@ -130,59 +118,18 @@ if (servicesLinksList) {
   });
 }
 
+const decreaseButton = document.querySelector('.decrease-button');
 
-/*const sliderItem = [...document.querySelectorAll('.slider-item')];
-console.log(sliderItem);
+const increaseButton = document.querySelector('.increase-button');
 
-const nextButton = document.querySelector('.slider-next');
-console.log(nextButton);
+const quantityInput = document.querySelector('.quantity-input');
 
-const prevButton = document.querySelector('.slider-prev');
-
-const bulletItem = [...document.querySelectorAll('.bullet-item')];*/
-
-/*
-let index = 0;
-nextButton.addEventListener('click', () => {
-  sliderItem[index].classList.remove('slider-screen-active');
-  bulletItem[index].classList.remove('bullet-active');
-  if (index + 1 > sliderItem.length - 1) {
-    index = 0;
-    sliderItem[index].classList.add('slider-screen-active');
-    bulletItem[index].classList.add('bullet-active');
-    return;
-  }
-  index += 1;
-  sliderItem[index].classList.add('slider-screen-active');
-  bulletItem[index].classList.add('bullet-active');
+decreaseButton.addEventListener('click', () => {
+if (quantityInput.value > 1) {
+  quantityInput.value--;
+}
 });
 
-prevButton.addEventListener('click', () => {
-
-  sliderItem[index].classList.remove('slider-screen-active');
-  bulletItem[index].classList.remove('bullet-active');
-
-  if (index == 0) {
-    index = sliderItem.length - 1;
-    sliderItem[index].classList.add('slider-screen-active');
-    bulletItem[index].classList.add('bullet-active');
-    return;
-  }
-  index -= 1;
-  sliderItem[index].classList.add('slider-screen-active');
-  bulletItem[index].classList.add('bullet-active');
+increaseButton.addEventListener('click', () => {
+quantityInput.value++;
 });
-
-for (let i = 0; i < bulletItem.length; i++) {
-  bulletItem[i].addEventListener('click', function () {
-
-    for (let j = 0; j < bulletItem.length; j++) {
-      bulletItem[j].classList.remove('bullet-active');
-      sliderItem[j].classList.remove('slider-screen-active');
-    }
-    bulletItem[i].classList.toggle('bullet-active');
-    if (bulletItem[i].classList.contains('bullet-active')) {
-      sliderItem[i].classList.add('slider-screen-active');
-    }
-  });
-}*/

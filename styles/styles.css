@@ -28,6 +28,11 @@
   box-sizing: border-box;
 }
 
+img {
+  max-width: 100%;
+  object-fit: contain;
+}
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -2633,16 +2638,17 @@ body {
   font-family: inherit;
   font-size: 18px;
   line-height: 30px;
-  min-width: 135px;
+  min-width: 143px;
   max-width: 100%;
   min-height: 30px;
   justify-self: center;
   border: none;
-  appearance: none;
+  -webkit-appearance: none;
+          appearance: none;
   background-color: transparent;
   background-image: url("../images/select-arrow-down.svg");
   background-repeat: no-repeat;
-  background-position: center right 5px;
+  background-position: center right 9px;
   cursor: pointer;
   padding-right: 27px;
 }
@@ -3260,7 +3266,8 @@ body {
   padding: 0;
   border: none;
   width: 60px;
-  appearance: none;
+  -webkit-appearance: none;
+          appearance: none;
   text-align: center;
   background-color: #f0f0f0;
   font-family: inherit;
@@ -3424,8 +3431,6 @@ input[type="number"]:focus {
 
 /*КЛАСС ДЛЯ ОШИБКИ ИНПУТА МОДАЛЬНОГО ОКНА*/
 .input-error {
-  /*outline: 2px solid #ff3d3d;
-  outline-offset: -2px;*/
   box-shadow: 0 0 0 2px #ff3d3d inset;
 }
 
