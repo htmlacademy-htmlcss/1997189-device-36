@@ -374,8 +374,7 @@ body {
   flex-direction: column;
   width: 100%;
   flex-shrink: 0;
-  /* display: none;*/
-}
+ }
 
 .navigation-list {
   display: flex;
@@ -2414,6 +2413,7 @@ body {
   text-transform: uppercase;
   font-weight: 800;
   cursor: pointer;
+  background-color: transparent;
 }
 
 .filter-form-button::before {

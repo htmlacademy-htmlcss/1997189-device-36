@@ -15,7 +15,7 @@ const servicesScreens = document.querySelectorAll('.service-description-item');
 
 
 order.addEventListener('click', () => {
-  modalOpen.classList.remove('modal-container-close')
+  modalOpen.classList.remove('modal-container-close');
 });
 
 const modalClose = document.querySelector('.modal-button');
@@ -125,11 +125,11 @@ const increaseButton = document.querySelector('.increase-button');
 const quantityInput = document.querySelector('.quantity-input');
 
 decreaseButton.addEventListener('click', () => {
-if (quantityInput.value > 1) {
-  quantityInput.value--;
-}
+  if (quantityInput.value > 1) {
+    quantityInput.value--;
+  }
 });
 
 increaseButton.addEventListener('click', () => {
-quantityInput.value++;
+  quantityInput.value++;
 });
